@@ -1,0 +1,198 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.typewriter {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f9a826;
+}
+
+nav a.active {
+    color: #f9a826;
+    text-decoration: underline;
+}
+
+.main-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.story-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.story-box p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.vision-goal {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 600;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.vision-board {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.vision-board h2, .vision-board h3 {
+    font-weight: bold;
+    color: #444;
+}
+
+.daily-reminder, .goals-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto; /* Centers the content */
+}
+
+.daily-reminder {
+    text-align: center; /* Ensures the text in the reminder is centered */
+    margin-bottom: 30px;
+}
+
+.goals-box {
+    text-align: center; /* Ensures the text for goals is centered */
+    margin-bottom: 30px;
+}
+
+.goals-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.goals-box li {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.image-gallery img {
+    width: 100%; /* Adjusts the image width to fit the container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image is cropped to fill the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #444;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #f9a826;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vision-board {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .social-media a {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .typewriter {
+        font-size: 2em;
+    }
+    .main-section {
+        margin: 20px 0;
+    }
+    nav a {
+        font-size: 1em;
+    }
+}
