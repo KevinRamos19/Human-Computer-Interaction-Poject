@@ -1,2 +1,3 @@
-#Ramos,Mark Kevin I.
-Human-Computer-Interaction-Poject
+Ramos,Mark Kevin I.
+This final project is Personal Website
+and Life as Working Student
